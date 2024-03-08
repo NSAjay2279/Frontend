@@ -5,8 +5,8 @@
             <!--
             function showData() {
 
-                var custName = document.customerData.elements[0]
-                var custPhone = document.customerData.elements[1]
+                var custName = document.customerData.name
+                var custPhone = document.customerData.phone
                 alert("Customer name: " + custName)
                 alert("Customer phone: " + custPhone)
             }
@@ -16,8 +16,8 @@
     <body>
         <form name="customerData">
             <h2>Customer Data</h2>
-            Customer Name:  <input type="text"><br />
-            Customer Phone: <input type="text"><br />
+            Customer Name:  <input type="text" name="name"><br />
+            Customer Phone: <input type="text" name="phone"><br />
                             <input type="button" value="Submit" onclick="showData()">
         </form>
     </body>
