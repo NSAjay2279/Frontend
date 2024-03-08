@@ -6,7 +6,7 @@
             function showData() {
                 var custName = document.customerData.name.value
                 var custPhone = document.customerData.phone.value
-                var custDescript = document.customerData.value.value
+                var custDescript = document.customerData.description.value
                 alert("Customer name: " + custName)
                 alert("Customer password: " + custPhone)
                 alert("Customer description: " + custDescript)
@@ -20,9 +20,9 @@
             Customer Name:  <input type="text" name="name"><br />
             Customer Password: <input type="password" name="phone"><br />
             Customer Description: <br />
-            <textarea rows = "5" column = "50" placeholder = "value">Enter description here...</textarea>
+            <textarea rows = "5" column = "50" name = "description">Enter description here...</textarea>
                             <input type="button" value="Submit" onclick="showData()">
-                            <input type="button" type="reset">
+                            <input type="reset">
         </form>
     </body>
 </html>
