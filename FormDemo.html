@@ -13,7 +13,7 @@
                 alert("Customer description: " + custDescript)
             }
 
-            function Validate() {
+            function validate() {
                 // case 1: something wrong with name
                 if(document.empData.name.value == "") {
                     alert("Please enter employee name")
@@ -32,7 +32,7 @@
             Customer Password: <input type="password" placeholder="(+91-8287623456)"name="phone"><br />
             Customer Description: <br />
             <textarea rows = "5" column = "50" placeholder="Enter description here..." name = "description"></textarea>
-                            <input type="button" value="Submit" onclick="showData()">
+                            <input type="button" value="Submit" onclick="validate()">
                             <input type="reset">
         </form>
     </body>
