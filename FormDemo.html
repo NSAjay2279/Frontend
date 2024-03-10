@@ -16,7 +16,8 @@
             function Validate() {
                 // case 1: something wrong with name
                 if(document.empData.name.value == "") {
-                    
+                    alert("Please enter employee name")
+                    document.empData.name.focus()
                 }
                 // case 2: something wrong with allowances
                 // case 3: everything is cool
