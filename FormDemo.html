@@ -4,15 +4,6 @@
     <head>
         <script language="javascript" type="text/javascript">
             <!--
-            function showData() {
-                var custName = document.customerData.name.value
-                var custPhone = document.customerData.phone.value
-                var custDescript = document.customerData.description.value
-                alert("Customer name: " + custName)
-                alert("Customer password: " + custPhone)
-                alert("Customer description: " + custDescript)
-            }
-
             function validate() {
                 // case 1: something wrong with name
                 if(document.empData.name.value == "") {
@@ -28,8 +19,10 @@
     <body>
         <form name="empData">
             <h2>Employee Data</h2>
-            Employee Name:          <input type="text"
-            Withholding Allowances: <input type="text"
+            Employee Name:          <input type="text" name="name"><br />
+            Withholding Allowances: <input type="text" name="allowances"><br />
+                                    <input type="button" value="Submit" onClick="validate()">
+                                    
 
         </form>
     </body>
