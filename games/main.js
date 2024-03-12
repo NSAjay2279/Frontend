@@ -3,6 +3,6 @@ class Game {
         this.canvas = canvas;
         this.context = context;
         this.width = this.canvas.width;
-        this.height = this.canvas.
+        this.height = this.canvas.height;
     }
 }
