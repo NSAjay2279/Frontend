@@ -13,6 +13,10 @@
                            document.empData.allowances.value < 0) {
                     alert("Please enter allowances")
                     document.empData.allowances.focus()
+                } else {
+                    alert("Data accepted--thanks!")
+                    var empName = document.empData.name.value
+                    var allowances = Number(document.empData.allowances.value)
                 }
                 // case 2: something wrong with allowances
                 // case 3: everything is cool
