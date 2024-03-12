@@ -9,7 +9,11 @@
                 if(document.empData.name.value == "") {
                     alert("Please enter employee name")
                     document.empData.name.focus()
-                } else if (document.empData.allowances.value == "")
+                } else if (document.empData.allowances.value == "" ||
+                           document.empData.allowances.value < 0) {
+                    alert("Please enter allowances")
+                    document.empData.allowances.focus()
+                }
                 // case 2: something wrong with allowances
                 // case 3: everything is cool
             }
@@ -22,7 +26,7 @@
             Employee Name:          <input type="text" name="name"><br />
             Withholding Allowances: <input type="text" name="allowances"><br />
                                     <input type="button" value="Submit" onClick="validate()">
-                                    
+
 
         </form>
     </body>
